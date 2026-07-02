@@ -1,0 +1,10 @@
+column,dtype,missing,unique,sample
+OrderID,int64,0,500,1001
+Date,str,0,272,2025-11-26
+Customer,str,0,145,Customer_28
+Region,str,0,4,North
+Product,str,0,6,Chair
+Category,str,0,3,Furniture
+Quantity,int64,0,10,6
+UnitPrice,int64,0,6,90
+Sales,int64,0,50,540

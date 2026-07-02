@@ -1,0 +1,9 @@
+﻿Metric,Value
+Total Rows,500
+Total Columns,9
+Duplicate Rows,0
+Total Blank Cells,0
+Date Columns,Date
+Numeric Columns,"Quantity, UnitPrice, Sales"
+Text Columns,"OrderID, Customer, Region, Product, Category"
+Notes,No duplicates. No missing values. Dates and currency formatted.
