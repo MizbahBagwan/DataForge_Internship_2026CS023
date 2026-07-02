@@ -1,0 +1,11 @@
+OrderID,Date,Customer,Region,Product,Category,Quantity,UnitPrice,Sales,Order Year,Order Month,High Value Order,Sales Category,Total Price
+1060,2025-12-21,Customer_60,East,Notebook,Stationery,1,5,5,2025,December,No,Low,5
+1174,2025-09-08,Customer_91,North,Notebook,Stationery,1,5,5,2025,September,No,Low,5
+1291,2025-12-17,Customer_120,North,Notebook,Stationery,1,5,5,2025,December,No,Low,5
+1365,2025-10-26,Customer_136,South,Notebook,Stationery,1,5,5,2025,October,No,Low,5
+1400,2025-06-18,Customer_104,North,Notebook,Stationery,1,5,5,2025,June,No,Low,5
+1027,2025-06-12,Customer_111,West,Notebook,Stationery,2,5,10,2025,June,No,Low,10
+1033,2025-11-12,Customer_44,East,Notebook,Stationery,2,5,10,2025,November,No,Low,10
+1038,2025-06-03,Customer_123,West,Notebook,Stationery,2,5,10,2025,June,No,Low,10
+1061,2025-05-11,Customer_93,South,Notebook,Stationery,2,5,10,2025,May,No,Low,10
+1092,2025-08-29,Customer_15,South,Notebook,Stationery,2,5,10,2025,August,No,Low,10

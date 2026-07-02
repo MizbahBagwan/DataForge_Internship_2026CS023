@@ -1,0 +1,11 @@
+OrderID,Date,Customer,Region,Product,Category,Quantity,UnitPrice,Sales,Order Year,Order Month,High Value Order,Sales Category,Total Price
+1090,2025-04-26,Customer_13,East,Laptop,Electronics,10,800,8000,2025,April,Yes,High,8000
+1130,2025-01-30,Customer_142,West,Laptop,Electronics,10,800,8000,2025,January,Yes,High,8000
+1172,2025-02-14,Customer_113,South,Laptop,Electronics,10,800,8000,2025,February,Yes,High,8000
+1245,2025-12-06,Customer_49,North,Laptop,Electronics,10,800,8000,2025,December,Yes,High,8000
+1282,2025-01-25,Customer_45,North,Laptop,Electronics,10,800,8000,2025,January,Yes,High,8000
+1312,2025-06-17,Customer_139,South,Laptop,Electronics,10,800,8000,2025,June,Yes,High,8000
+1413,2025-04-22,Customer_2,North,Laptop,Electronics,10,800,8000,2025,April,Yes,High,8000
+1500,2025-05-28,Customer_19,North,Laptop,Electronics,10,800,8000,2025,May,Yes,High,8000
+1021,2025-05-29,Customer_67,North,Laptop,Electronics,9,800,7200,2025,May,Yes,High,7200
+1078,2025-12-28,Customer_53,East,Laptop,Electronics,9,800,7200,2025,December,Yes,High,7200

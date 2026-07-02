@@ -1,0 +1,18 @@
+let
+    Source = Csv.Document(File.Contents("C:\Users\mizba\Desktop\DataForge\01_data\raw\dataset_raw.csv"),[Delimiter=",", Columns=9, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"OrderID", Int64.Type}, {"Date", type date}, {"Customer", type text}, {"Region", type text}, {"Product", type text}, {"Category", type text}, {"Quantity", Int64.Type}, {"UnitPrice", Int64.Type}, {"Sales", type number}}),
+    #"Filtered Rows" = Table.SelectRows(#"Changed Type", each [OrderID] <> null and [OrderID] <> ""),
+    #"Filtered Rows1" = Table.SelectRows(#"Filtered Rows", each [Date] <> null and [Date] <> ""),
+    #"Filtered Rows2" = Table.SelectRows(#"Filtered Rows1", each [Customer] <> null and [Customer] <> ""),
+    #"Filtered Rows3" = Table.SelectRows(#"Filtered Rows2", each [Region] <> null and [Region] <> ""),
+    #"Filtered Rows4" = Table.SelectRows(#"Filtered Rows3", each [Product] <> null and [Product] <> ""),
+    #"Filtered Rows5" = Table.SelectRows(#"Filtered Rows4", each [Category] <> null and [Category] <> ""),
+    #"Filtered Rows6" = Table.SelectRows(#"Filtered Rows5", each [Quantity] <> null and [Quantity] <> ""),
+    #"Filtered Rows7" = Table.SelectRows(#"Filtered Rows6", each [UnitPrice] <> null and [UnitPrice] <> ""),
+    #"Filtered Rows8" = Table.SelectRows(#"Filtered Rows7", each [Sales] <> null and [Sales] <> ""),
+    #"Added Conditional Column" = Table.AddColumn(#"Filtered Rows8", "Profit Status", each if [Sales] > 1000 then "High" else if [Sales] > 500 then "Medium" else "Low"),
+    #"Inserted Year" = Table.AddColumn(#"Added Conditional Column", "Year", each Date.Year([Date]), Int64.Type),
+    #"Inserted Month" = Table.AddColumn(#"Inserted Year", "Month", each Date.Month([Date]), Int64.Type)
+in
+    #"Inserted Month"
